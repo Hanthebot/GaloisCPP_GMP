@@ -1,9 +1,9 @@
 /**********************************************************************
    Project: C++ Library for General Galois Field Arithmetic
 
-   Language: C++ 2007	   
-   Author: Saied H. Khayat
-   Date:   Feb 2013
+   Language: C++ 2011   
+   Author: Saied H. Khayat (ported by Hangyeol Bae)
+   Date:   Oct 2024
    URL: https://github.com/saiedhk
    
    Copyright Notice: Free use of this library is permitted under the
@@ -452,8 +452,8 @@ int main()
 
       //-------------------------------------------------------------
       try {
-         cout << "\nACTION: E = GFexponentiate(A,2)\n";
-         E = GFexponentiate(A,2);
+         cout << "\nACTION: E = GFexp(A,2)\n";
+         E = GFexp(A,2);
          cout << "RESULT: E = " << E;
       }
       catch(ErrorCode e) { cout << e << endl; }
@@ -473,8 +473,8 @@ int main()
 
       //-------------------------------------------------------------
       try {
-         cout << "\nACTION: E = GFexponentiate(A,18)\n";
-         E = GFexponentiate(A,18);
+         cout << "\nACTION: E = GFexp(A,18)\n";
+         E = GFexp(A,18);
          cout << "RESULT: E = " << E;
       }
       catch(ErrorCode e) { cout << e << endl; }
@@ -494,8 +494,8 @@ int main()
 
       //-------------------------------------------------------------
       try {
-         cout << "\nACTION: E = GFexponentiate(A,137)\n";
-         E = GFexponentiate(A,137);
+         cout << "\nACTION: E = GFexp(A,137)\n";
+         E = GFexp(A,137);
          cout << "RESULT: E = " << E;
       }
       catch(ErrorCode e) { cout << e << endl; }

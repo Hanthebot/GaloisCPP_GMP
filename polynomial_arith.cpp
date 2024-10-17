@@ -93,7 +93,7 @@ void polynomialSubtract(const Fint A[], Int Alen,
       if (maxlen == Alen)
          D[i] = A[i];
       else
-         D[i] = ( (B[i]>0) ? (modulus - B[i]) : 0);
+         D[i] = ( (B[i]>0) ? (modulus - B[i]) : (Fint) 0);
    }
 }
 

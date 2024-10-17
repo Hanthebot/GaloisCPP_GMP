@@ -12,12 +12,16 @@
 
 *******************************************************************************/
 
+// modified by Hangyeol Bae; Oct 2024, for GMP use
+
 /*
    Basic definitions for the Galois Field Package
 */
 
 #ifndef TYPEDEFS_H
 #define TYPEDEFS_H
+
+#include <gmpxx.h>
 
 /**
    To avoid future naming conflicts, this entire library has been placed in
@@ -31,7 +35,7 @@ namespace shk_galoiscpp
    This typedef allows one to set 'Fint' to any integer type. However,
    IMPORTANT NOTE: The integer type chosen for 'Fint' MUST be of signed type.
 */
-typedef signed long long int Fint;
+typedef mpz_class Fint;
 
 
 /**

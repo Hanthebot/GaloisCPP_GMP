@@ -159,7 +159,7 @@ RESULT: G = (1 0 0)
 ACTION: E = A / A
 RESULT: E = (1 0 0)
 
-ACTION: E = GFexponentiate(A,2)
+ACTION: E = GFexp(A,2)
 RESULT: E = (1 1 1)
 
 ACTION: F = A*A
@@ -167,7 +167,7 @@ RESULT: F = (1 1 1)
 
 OK: E==F is true
 
-ACTION: E = GFexponentiate(A,18)
+ACTION: E = GFexp(A,18)
 RESULT: E = (1 1 0)
 
 ACTION: F = A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A
@@ -175,7 +175,7 @@ RESULT: F = (1 1 0)
 
 OK: E==F is true
 
-ACTION: E = GFexponentiate(A,137)
+ACTION: E = GFexp(A,137)
 RESULT: E = (1 1 0)
 
 ACTION: F = A*A*A*A* 137 times A*A*A*A*A*A
@@ -345,7 +345,7 @@ RESULT: G = (1 0 0 0 0)
 ACTION: E = A / A
 RESULT: E = (1 0 0 0 0)
 
-ACTION: E = GFexponentiate(A,2)
+ACTION: E = GFexp(A,2)
 RESULT: E = (0 1 1 0 1)
 
 ACTION: F = A*A
@@ -353,7 +353,7 @@ RESULT: F = (0 1 1 0 1)
 
 OK: E==F is true
 
-ACTION: E = GFexponentiate(A,18)
+ACTION: E = GFexp(A,18)
 RESULT: E = (0 0 0 0 1)
 
 ACTION: F = A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A
@@ -361,7 +361,7 @@ RESULT: F = (0 0 0 0 1)
 
 OK: E==F is true
 
-ACTION: E = GFexponentiate(A,137)
+ACTION: E = GFexp(A,137)
 RESULT: E = (1 1 0 1 0)
 
 ACTION: F = A*A*A*A* 137 times A*A*A*A*A*A
@@ -531,7 +531,7 @@ RESULT: G = (1 0)
 ACTION: E = A / A
 RESULT: E = (1 0)
 
-ACTION: E = GFexponentiate(A,2)
+ACTION: E = GFexp(A,2)
 RESULT: E = (2 0)
 
 ACTION: F = A*A
@@ -539,7 +539,7 @@ RESULT: F = (2 0)
 
 OK: E==F is true
 
-ACTION: E = GFexponentiate(A,18)
+ACTION: E = GFexp(A,18)
 RESULT: E = (2 0)
 
 ACTION: F = A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A
@@ -547,7 +547,7 @@ RESULT: F = (2 0)
 
 OK: E==F is true
 
-ACTION: E = GFexponentiate(A,137)
+ACTION: E = GFexp(A,137)
 RESULT: E = (1 2)
 
 ACTION: F = A*A*A*A* 137 times A*A*A*A*A*A
@@ -717,7 +717,7 @@ RESULT: G = (1 0 0 0)
 ACTION: E = A / A
 RESULT: E = (1 0 0 0)
 
-ACTION: E = GFexponentiate(A,2)
+ACTION: E = GFexp(A,2)
 RESULT: E = (9 7 5 6)
 
 ACTION: F = A*A
@@ -725,7 +725,7 @@ RESULT: F = (9 7 5 6)
 
 OK: E==F is true
 
-ACTION: E = GFexponentiate(A,18)
+ACTION: E = GFexp(A,18)
 RESULT: E = (11 2 5 2)
 
 ACTION: F = A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A
@@ -733,7 +733,7 @@ RESULT: F = (11 2 5 2)
 
 OK: E==F is true
 
-ACTION: E = GFexponentiate(A,137)
+ACTION: E = GFexp(A,137)
 RESULT: E = (10 11 4 8)
 
 ACTION: F = A*A*A*A* 137 times A*A*A*A*A*A
@@ -903,7 +903,7 @@ RESULT: G = (1 0 0 0 0 0)
 ACTION: E = A / A
 RESULT: E = (1 0 0 0 0 0)
 
-ACTION: E = GFexponentiate(A,2)
+ACTION: E = GFexp(A,2)
 RESULT: E = (6 16 8 6 8 4)
 
 ACTION: F = A*A
@@ -911,7 +911,7 @@ RESULT: F = (6 16 8 6 8 4)
 
 OK: E==F is true
 
-ACTION: E = GFexponentiate(A,18)
+ACTION: E = GFexp(A,18)
 RESULT: E = (3 16 7 1 15 5)
 
 ACTION: F = A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A
@@ -919,7 +919,7 @@ RESULT: F = (3 16 7 1 15 5)
 
 OK: E==F is true
 
-ACTION: E = GFexponentiate(A,137)
+ACTION: E = GFexp(A,137)
 RESULT: E = (13 3 0 2 11 4)
 
 ACTION: F = A*A*A*A* 137 times A*A*A*A*A*A
@@ -1089,7 +1089,7 @@ RESULT: G = (1 0 0 0 0 0)
 ACTION: E = A / A
 RESULT: E = (1 0 0 0 0 0)
 
-ACTION: E = GFexponentiate(A,2)
+ACTION: E = GFexp(A,2)
 RESULT: E = (12 10 11 12 3 9)
 
 ACTION: F = A*A
@@ -1097,7 +1097,7 @@ RESULT: F = (12 10 11 12 3 9)
 
 OK: E==F is true
 
-ACTION: E = GFexponentiate(A,18)
+ACTION: E = GFexp(A,18)
 RESULT: E = (12 2 3 11 3 7)
 
 ACTION: F = A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A
@@ -1105,7 +1105,7 @@ RESULT: F = (12 2 3 11 3 7)
 
 OK: E==F is true
 
-ACTION: E = GFexponentiate(A,137)
+ACTION: E = GFexp(A,137)
 RESULT: E = (8 8 9 10 1 6)
 
 ACTION: F = A*A*A*A* 137 times A*A*A*A*A*A
@@ -1275,7 +1275,7 @@ RESULT: G = (1 0 0 0 0 0)
 ACTION: E = A / A
 RESULT: E = (1 0 0 0 0 0)
 
-ACTION: E = GFexponentiate(A,2)
+ACTION: E = GFexp(A,2)
 RESULT: E = (10 29 23 17 9 3)
 
 ACTION: F = A*A
@@ -1283,7 +1283,7 @@ RESULT: F = (10 29 23 17 9 3)
 
 OK: E==F is true
 
-ACTION: E = GFexponentiate(A,18)
+ACTION: E = GFexp(A,18)
 RESULT: E = (17 22 1 13 21 12)
 
 ACTION: F = A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A
@@ -1291,7 +1291,7 @@ RESULT: F = (17 22 1 13 21 12)
 
 OK: E==F is true
 
-ACTION: E = GFexponentiate(A,137)
+ACTION: E = GFexp(A,137)
 RESULT: E = (8 18 16 4 0 18)
 
 ACTION: F = A*A*A*A* 137 times A*A*A*A*A*A
@@ -1461,7 +1461,7 @@ RESULT: G = (1)
 ACTION: E = A / A
 RESULT: E = (1)
 
-ACTION: E = GFexponentiate(A,2)
+ACTION: E = GFexp(A,2)
 RESULT: E = (11)
 
 ACTION: F = A*A
@@ -1469,7 +1469,7 @@ RESULT: F = (11)
 
 OK: E==F is true
 
-ACTION: E = GFexponentiate(A,18)
+ACTION: E = GFexp(A,18)
 RESULT: E = (36)
 
 ACTION: F = A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A*A
@@ -1477,7 +1477,7 @@ RESULT: F = (36)
 
 OK: E==F is true
 
-ACTION: E = GFexponentiate(A,137)
+ACTION: E = GFexp(A,137)
 RESULT: E = (29)
 
 ACTION: F = A*A*A*A* 137 times A*A*A*A*A*A

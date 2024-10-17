@@ -147,7 +147,7 @@ GFelement GFelement::operator-()
 
    for (Int i=0; i<dimension; i++)
    {
-      result.polynomial[i] = (polynomial[i]>0) ? (modulus - polynomial[i]) : 0;
+      result.polynomial[i] = (polynomial[i]>0) ? (modulus - polynomial[i]) : (Fint) 0;
    }
 
    return result;
@@ -506,7 +506,7 @@ GFelement GFexp(const GFelement& G, Fint m)
 
    Fint mask = 1;
 
-   if (m & mask)
+   if ((m & mask) != 0) // edit: GMP doesn't support bool conversion naturally
    {
       S = G;
    }
@@ -515,7 +515,7 @@ GFelement GFexp(const GFelement& G, Fint m)
    {
       Gtemp = Gtemp * Gtemp;
       mask <<= 1;
-      if (m & mask)
+      if ((m & mask) != 0) // edit: GMP doesn't support bool conversion naturally
       {
          S = Gtemp * S;
       }

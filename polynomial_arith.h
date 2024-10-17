@@ -166,7 +166,7 @@ inline Int polynomialDegree(const Fint poly[], Int len)
 {
    for (Int i=len-1; i>=0; i--)
    {
-      if (poly[i]) return i;
+      if (poly[i] != 0) return i;
    }
 
    return -1;
